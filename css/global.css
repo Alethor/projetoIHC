@@ -360,3 +360,79 @@ li.nav-item a:hover:before{
 	margin: 0 auto;
 	max-width: 120px;
 }
+
+/*Formulário*/
+
+.contact-section{
+	padding: 100px 0;
+}
+
+#formulario .row{
+	margin-bottom: 15px;
+}
+#formulario input{
+	padding-left: 33px;
+}
+#formulario i:nth-child(1){
+	position: absolute;
+		bottom: 0;
+	left: 25px;
+	transform: translateY(-65%);
+}
+#formulario #cod-info {
+    position: absolute;
+    right: 65px;
+    cursor: pointer;
+}
+#formulario label.titulo {
+    position: absolute;
+    transform: translate(35px, 0);
+    top: 25%;
+    margin: 0;
+    color: #707070
+}
+#formulario input:focus, #formulario select:focus {
+	border-color: #000 !important;
+	box-shadow: none;
+}
+#formulario input:focus + label.titulo, #formulario input:not(:placeholder-shown) + label{
+	transition: 0.35s;
+	top: -30%;
+    left: 0;
+    color: #000;
+    background: #fff;
+    font-size: 14px
+}
+button#enviar{
+	background: #000;
+	color: #ffffff;
+	position: relative;
+	width: 200px;
+	box-sizing: border-box;
+	transform-style: preserve-3d;
+	transition: all 300ms linear;
+}
+button#enviar:after{
+	position: absolute;
+	left: 0;
+	top: -110%;
+	padding: .375rem .75rem;
+	content: 'Enviar!';
+	width: 100%;
+	box-sizing: border-box;
+	height: auto;
+	border: 1px solid transparent;
+	background: #09c;
+	border-radius: .25rem;
+	transform: rotateX(90deg);
+	transform-origin: left bottom;
+}
+button#enviar:hover{
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
+.botao{
+	position: absolute;
+	transform: translateX(-50%);
+	left: 50%;
+}

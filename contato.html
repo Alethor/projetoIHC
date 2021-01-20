@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title>Contato</title>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Projeto IHC</title>
@@ -13,8 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css">
 </head>
 <body>
-	<header>
-  <!-- Fixed navbar -->
+
+<!-- //HEADER -->
+<header>
+  	<!-- Fixed navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="#">LOGO</a>
@@ -54,8 +54,64 @@
 </header>
 
 <section id="page-content">
+	<div class="contact-section">
+		<div class="container">
+			<div class="col-6">
+				<form id="formulario" action="">
 
+					<div class="row">
+						<div class="col-12">
+							<select name="assunto" id="" class="form-control">
+								<option value="" disabled="disabled" selected="selected" class="notranslate">Assunto</option>
+									<option value="01">Dúvidas na compra</option>
+									<option value="02">Vaga de emprego</option>
+									<option value="03">Sugestões</option>
+							</select>
+						</div>
+					</div>
 
+					<div class="row">
+						<div class="col-12">
+							<i class="fa fa-user-o" aria-hidden="true"></i>	
+							<input id="titular" name="titular" type="text" class="form-control" placeholder=" "/>
+							<label class="titulo" name="titulo" for="titular">Nome e sobrenome</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-6">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<input type="tel" name="phone" id="phone" class="form-control" placeholder=" "/>
+							<label for="phone" class="titulo">Telefone</label>
+						</div>
+						<div class="col-6">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<input type="tel" name="data_nasc" id="data_nasc" class="form-control" placeholder=" "/>
+							<label for="data_nasc" class="titulo">Data de Nascimento</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							<input type="tel" name="cpfcnpj" id="cpfcnpj" class="form-control" maxlength="11" value="" placeholder=" ">
+							<label for="cpfcnpj" class="titulo">E-mail</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<div class="botao">
+								<button class="btn" id="enviar">
+									Enviar
+								</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 </section>
 
 
