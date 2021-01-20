@@ -364,7 +364,9 @@ li.nav-item a:hover:before{
 /*Formulário*/
 
 .contact-section{
-	padding: 100px 0;
+	/*min-height: 67;*/
+	margin-top: 56px;
+	padding: 25px 0;
 }
 
 #formulario .row{
@@ -436,3 +438,4 @@ button#enviar:hover{
 	transform: translateX(-50%);
 	left: 50%;
 }
+
