@@ -69,9 +69,12 @@ nav .navbar-brand{
 	color: #fff;
 	border-color: #fff;
 }
-.search-bar button:hover{
-	background: #09c;
-	border-color: #09c;
+.search-bar button:hover, .search-bar button:active, .search-bar button:focus {
+	background: #09c !important;
+	border-color: #09c !important; 
+}
+.search-bar button:focus{
+	box-shadow: 0 0 0 0.2rem #ccc !important;
 }
 
 .navbar-nav .nav-link{
@@ -202,7 +205,7 @@ ul.navbar-nav.right-side {
 .game-list .content-block button:before{
 	font: normal normal normal 18px/1 FontAwesome;
     content: "\f07a";
-   	color: #111;
+   	color: #eee;
    	padding-right: 10px;
 }
 
@@ -222,12 +225,12 @@ ul.navbar-nav.right-side {
 }
 .banner-content .info span{
 	left: 15px;
-	bottom: 15px;
+	bottom:40px;
 	color: #ccc;
 	font-size: 18px;
 }
 .banner-content .info button {
-	right: 15px;
+	right: 10px;
 	bottom: 5px;
 	background-color: #09c;
 }
@@ -290,12 +293,6 @@ ul.navbar-nav.right-side {
 	font-size: 14px;
 	font-weight: bold;
 }
-#footer .last{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 12px;
-}
 
 i.fa-facebook{
 	color: #5b79a8;
@@ -314,4 +311,40 @@ i.fa-twitch{
 }
 i.fa-commenting-o{
 	color: #6c8ada;
+}
+
+.navbar-expand-md .navbar-nav li {
+	position: relative;
+}
+
+li.nav-item a:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #09c;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    display: none;
+}
+
+li.nav-item a:hover:before{
+	display: block;
+}
+
+@media (max-width: 1050px){
+	ul#social-media li {
+	    width: 100%;
+	    margin: 10px 0;
+	    text-align: center;
+	}
+}
+
+.last p{
+	font-size: 12px;
+}
+.last img{
+	display: block;
+	margin: 0 auto;
+	max-width: 120px;
 }
