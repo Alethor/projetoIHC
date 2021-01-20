@@ -158,8 +158,18 @@ ul.navbar-nav.right-side {
 }
 
 .game-list  .content-block .item-game{
-	width: 19%;
-	margin-right:10px;
+	width: 20%;
+	padding:10px;
+}
+
+@media (max-width: 768px){
+	.game-list  .content-block{
+		flex-wrap: wrap
+	}
+	.game-list  .content-block .item-game{
+		width: 50%;
+		margin-bottom: 50px;
+	}
 }
 
 .game-list  .content-block .item-game img{
