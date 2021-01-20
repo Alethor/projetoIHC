@@ -141,6 +141,10 @@ ul.navbar-nav.right-side {
 	padding-top: 30px;
 }
 
+.game-list > div {
+    border-top: 4px dotted #777;
+}
+
 .game-list .header-block{
 	display: flex;
 	flex-wrap: wrap;
@@ -194,9 +198,17 @@ ul.navbar-nav.right-side {
     padding-bottom: 35px;
 }
 .game-list .content-block button{
-	width:100%;
+	width:90%;
+	display: block;
+	margin: 0 auto;
 	background-color: #c33;
 	position: relative;
+	transition: 0.3s;
+}
+.game-list .content-block button:hover {
+	background-color: #c44;
+	opacity: 0.9;
+	width: 98%;
 }
 .game-list .content-block button a{
 	color: #fff;
@@ -264,7 +276,7 @@ ul.navbar-nav.right-side {
 }
 #footer .left-list li a{
 	padding: 12px;
-	border-bottom: 4px solid transparent;
+	border-bottom: 5px solid transparent;
 }
 #footer .left-list li a:hover{
 	border-color: #09c;
