@@ -9,8 +9,13 @@ body {
   color: #888;
 }
 
+a{
+	color: #888;
+}
+
 a:hover{
 	text-decoration: none;
+	color: #fff;
 }
 
 #banner-home {
@@ -57,7 +62,7 @@ nav.navbar{
 }
 
 nav .navbar-brand{
-	margin-left: 50px;
+	margin-right: 80px;
 }
 
 .search-bar button{
@@ -199,4 +204,114 @@ ul.navbar-nav.right-side {
     content: "\f07a";
    	color: #111;
    	padding-right: 10px;
+}
+
+.banner-content{
+	background-color: #111;
+	padding-bottom: 50px;
+}
+
+.banner-content .info{
+	position: relative;
+	min-height: 230px;		
+	background: linear-gradient(360deg, #670907 0%, #e50202 100%);
+	border-radius: 4px
+}	
+.banner-content .info span, .banner-content .info button {
+	position: absolute;
+}
+.banner-content .info span{
+	left: 15px;
+	bottom: 15px;
+	color: #ccc;
+	font-size: 18px;
+}
+.banner-content .info button {
+	right: 15px;
+	bottom: 5px;
+	background-color: #09c;
+}
+.banner-content .info button a{
+	color: #ccc;
+	text-transform: uppercase;
+}
+
+#footer{
+	background-color: #000;
+}
+#footer .line-div{
+	border-bottom: 1px solid #999;
+	margin-bottom: 30px;
+}
+#footer ul{
+	list-style-type: none;
+}
+#footer ul li {
+	float: left;
+	margin: 15px 15px;
+	font-size: 13px;
+}
+#footer ul li:first-child{
+	margin-left: 0;
+	padding-left: 0;
+}
+#footer .left-list li{
+	margin: 0;
+	padding: 16px;
+}
+#footer .left-list li a{
+	padding: 12px;
+	border-bottom: 4px solid transparent;
+}
+#footer .left-list li a:hover{
+	border-color: #09c;
+}
+#footer ul#social-media li{
+	background-color: #263241;
+	padding: 8px 15px;
+	border-radius: 2px;
+	transition: 0.3s;
+}
+#footer ul#social-media li:hover{
+	opacity: .8;
+}
+#footer ul#social-media li a{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+#footer ul#social-media li i{
+	padding: 2px 10px 2px 0;
+	font-size: 14px;
+}
+#footer h5{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+}
+#footer .last{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 12px;
+}
+
+i.fa-facebook{
+	color: #5b79a8;
+}
+i.fa-twitter{
+	color: #63b3ff
+}
+i.fa-youtube-play{
+	color: #ee2b3b
+}
+i.fa-instagram{
+	color: #d63372;
+}
+i.fa-twitch{
+	color: #6441a5; 
+}
+i.fa-commenting-o{
+	color: #6c8ada;
 }
