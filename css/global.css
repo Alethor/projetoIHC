@@ -1,0 +1,44 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #555555;
+}
+
+#banner-home{
+	width: 100%;
+	height: 100vh;
+	background: black;
+}
+
+.item-faixa{
+	display: flex; 
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.item-faixa div:nth-child(1){
+	padding: 15px;
+}
+
+
+.item-faixa h2{
+	display: block;
+
+}
+
+.item-faixa i{
+	font-size: 32px;
+
+}
+
+
+
+
