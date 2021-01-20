@@ -6,7 +6,11 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #555555;
+  color: #888;
+}
+
+a:hover{
+	text-decoration: none;
 }
 
 #banner-home {
@@ -69,11 +73,15 @@ nav .navbar-brand{
 	color: #eee !important;
 }
 
+#faixas-promo{
+	background-color: #222;
+	padding: 15px;
+}
+
 #faixas-promo .faixa{
 	position: relative;
 	background-color: #111;
 	border-radius: 4px;
-	margin: 15px 0;
 }	
 
 @media (min-width: 900px){
@@ -118,4 +126,67 @@ nav .navbar-brand{
 ul.navbar-nav.right-side {
     margin-left: auto;
     margin-right: 50px;
+}
+
+.game-list{
+	background-color: #111;
+	padding-top: 30px;
+}
+
+.game-list .header-block{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 15px;
+}
+.game-list .header-block h3{
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.game-list  .header-block button{
+	background: #09c;
+	color: #eee;
+}
+.game-list  .header-block button:hover{
+	color: #fff;
+}
+.game-list  .content-block {
+	padding: 50px 0;
+	display: flex;
+}
+
+.game-list  .content-block .item-game{
+	width: 19%;
+	margin-right:10px;
+}
+
+.game-list  .content-block .item-game img{
+	width: 100%;
+	overflow: hidden;
+}
+
+.game-list  .content-block h4{
+	color: #eee;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 35px;
+}
+.game-list .content-block button{
+	width:100%;
+	background-color: #c33;
+	position: relative;
+}
+.game-list .content-block button a{
+	color: #fff;
+}
+
+.game-list .content-block button:before{
+	font: normal normal normal 18px/1 FontAwesome;
+    content: "\f07a";
+   	color: #111;
+   	padding-right: 10px;
 }
