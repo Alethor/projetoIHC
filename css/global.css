@@ -272,6 +272,17 @@ ul.navbar-nav.right-side {
 	margin-left: 0;
 	padding-left: 0;
 }
+
+@media (max-width: 800px){
+	ul.left-list {
+	    display: flex;
+	    flex-direction: column;
+	}
+	#footer ul.left-list li:first-child{
+		padding-left: 15px;
+	}
+}
+
 #footer .left-list li{
 	margin: 0;
 	padding: 16px;
@@ -503,6 +514,7 @@ button#enviar2:hover{
 	padding: 25px 0;
 	border-radius: 4px;
 	transition: 0.5s;
+	margin-bottom: 20px;
 }
 
 .devs h2{
@@ -547,4 +559,17 @@ button#enviar2:hover{
 	margin: 0 auto;
 	border-radius: 50%;
 	overflow: hidden
+}
+
+#page-content, .products{
+	background: #111;
+}
+
+@media (max-width: 768px){
+	.search-bar, ul.navbar-nav.right-side{
+		display: none;
+	}
+	.navbar-nav.mr-auto{
+		text-align: center
+	}
 }
