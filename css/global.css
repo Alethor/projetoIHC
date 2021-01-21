@@ -308,6 +308,9 @@ ul.navbar-nav.right-side {
 	font-weight: bold;
 }
 
+i.fa-whatsapp{
+	color: #4ab647;
+}
 i.fa-facebook{
 	color: #5b79a8;
 }
@@ -322,6 +325,9 @@ i.fa-instagram{
 }
 i.fa-twitch{
 	color: #6441a5; 
+}
+i.fa-linkedin{
+	color: #0073b1;
 }
 i.fa-commenting-o{
 	color: #6c8ada;
@@ -486,4 +492,59 @@ button#enviar2:hover{
 
 #register-form{
 	padding: 0 0 50px 0;
+}
+
+
+.devs{
+	text-align: center;
+	background: #222;
+	width: 315px;
+	margin: 0 auto;
+	padding: 25px 0;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+
+.devs h2{
+	padding-top: 20px;
+	color: #ccc;
+}
+
+.devs:hover{
+	background: #000;
+}
+.devs .social-links{
+	display: block;
+	margin: 0 auto;
+	width: 65%;
+	padding-top:30px;
+}
+
+.devs .social-links ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.devs .social-links ul li i.fa{
+	font-size: 24px;
+	width: 45px;
+	height: 45px;
+	background: #111;
+	padding: 10px;
+	border-radius: 50%;
+	transition: 0.4s;
+}
+.devs .social-links ul li i.fa:hover{
+	background: #000;
+}
+
+.frame-dev{
+	width: 240px;
+	height: 240px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden
 }
