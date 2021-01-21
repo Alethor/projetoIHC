@@ -42,7 +42,7 @@
 		      </form>
 		      <ul class="navbar-nav right-side">
 		      	<li class="nav-item">
-		          <a class="nav-link" href="cadastro.html"><i class="fa fa-user-o" aria-hidden="true"></i> &nbsp; Entrar</a>
+		          <a class="nav-link" href="login.html"><i class="fa fa-user-o" aria-hidden="true"></i> &nbsp; Entrar</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="finalizar.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -60,6 +60,40 @@
                 <div>
                     <h1>Login</h1>
                 </div>
+                <div class="row">
+            	<div class="col-lg-6">
+            			<img src="img/register.png" alt="" class="img-fluid">
+            	</div>
+            	<div class="col-lg-6">
+            		<form id="formulario" action="">
+            			
+            				<div class="row">
+								<div class="col-12">
+									<i class="fa fa-user-o" aria-hidden="true"></i>	
+									<input id="titular" name="titular" type="email" class="form-control" placeholder=" "/>
+									<label class="titulo" name="titulo" for="titular">E-mail</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12">
+									<i class="fa fa-user-o" aria-hidden="true"></i>	
+									<input id="titular" name="titular" type="password" class="form-control" placeholder=" "/>
+									<label class="titulo" name="titulo" for="titular">Senha</label>
+								</div>
+							</div>
+							<a href="cadastro.html">Cadastrar-se</a>
+							<div class="row">
+								<div class="col-12">
+									<div class="botao">
+										<button type="button" class="btn btn-default" id="enviar2" onclick="sendForm()">
+											Entrar
+										</button>
+									</div>
+								</div>
+							</div>
+
+            		</form>
+            	</div>
             </div>
         </div>
     </div>
