@@ -7,6 +7,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #888;
+  font-size: 16px;
 }
 
 a{
@@ -63,6 +64,7 @@ nav.navbar{
 
 nav .navbar-brand{
 	margin-right: 80px;
+	font-size: 16px !important;
 }
 
 .search-bar button{
@@ -270,6 +272,17 @@ ul.navbar-nav.right-side {
 	margin-left: 0;
 	padding-left: 0;
 }
+
+@media (max-width: 800px){
+	ul.left-list {
+	    display: flex;
+	    flex-direction: column;
+	}
+	#footer ul.left-list li:first-child{
+		padding-left: 15px;
+	}
+}
+
 #footer .left-list li{
 	margin: 0;
 	padding: 16px;
@@ -306,6 +319,9 @@ ul.navbar-nav.right-side {
 	font-weight: bold;
 }
 
+i.fa-whatsapp{
+	color: #4ab647;
+}
 i.fa-facebook{
 	color: #5b79a8;
 }
@@ -320,6 +336,9 @@ i.fa-instagram{
 }
 i.fa-twitch{
 	color: #6441a5; 
+}
+i.fa-linkedin{
+	color: #0073b1;
 }
 i.fa-commenting-o{
 	color: #6c8ada;
@@ -367,13 +386,23 @@ li.nav-item a:hover:before{
 	min-height: 61vh;
 	margin-top: 56px;
 	padding: 25px 0;
+	background: #111
 }
-
+.header-content h1{
+	color: #eee;
+	padding-bottom: 20px;
+}
+form#formulario{
+	margin-bottom: 65px;
+}
 #formulario .row{
 	margin-bottom: 15px;
 }
-#formulario input{
+#formulario input, select{
 	padding-left: 33px;
+	background: #232323 !important;
+	border: 1px solid #232323 !important;
+	color: #eee !important;
 }
 #formulario i:nth-child(1){
 	position: absolute;
@@ -391,19 +420,24 @@ li.nav-item a:hover:before{
     transform: translate(35px, 0);
     top: 25%;
     margin: 0;
-    color: #707070
+    color: #eee
 }
 #formulario input:focus, #formulario select:focus {
 	border-color: #000 !important;
 	box-shadow: none;
 }
+
+#formulario i.fa{
+	color: #09c;
+}
+
 #formulario input:focus + label.titulo, #formulario input:not(:placeholder-shown) + label{
 	transition: 0.35s;
 	top: -30%;
     left: 0;
-    color: #000;
-    background: #fff;
-    font-size: 14px
+    color: #fff;
+    background: transparent;
+    font-size: 14px;
 }
 button#enviar{
 	background: #000;
@@ -433,14 +467,109 @@ button#enviar:hover{
 	transform-origin: center bottom;
 	transform: rotateX(-90deg) translateY(100%);
 }
+button#enviar2{
+	background: #000;
+	color: #ffffff;
+	position: relative;
+	width: 200px;
+	box-sizing: border-box;
+	transform-style: preserve-3d;
+	transition: all 300ms linear;
+}
+button#enviar2:after{
+	position: absolute;
+	left: 0;
+	top: -110%;
+	padding: .375rem .75rem;
+	content: 'Cadastrar!';
+	width: 100%;
+	box-sizing: border-box;
+	height: auto;
+	border: 1px solid transparent;
+	background: #09c;
+	border-radius: .25rem;
+	transform: rotateX(90deg);
+	transform-origin: left bottom;
+}
+button#enviar2:hover{
+	transform-origin: center bottom;
+	transform: rotateX(-90deg) translateY(100%);
+}
 .botao{
 	position: absolute;
 	transform: translateX(-50%);
 	left: 50%;
 }
 
-.header-content h1{
-	color: #222 ;
-	padding-bottom: 20px;
+#register-form{
+	padding: 0 0 50px 0;
+}
 
+
+.devs{
+	text-align: center;
+	background: #222;
+	width: 315px;
+	margin: 0 auto;
+	padding: 25px 0;
+	border-radius: 4px;
+	transition: 0.5s;
+	margin-bottom: 20px;
+}
+
+.devs h2{
+	padding-top: 20px;
+	color: #ccc;
+}
+
+.devs:hover{
+	background: #000;
+}
+.devs .social-links{
+	display: block;
+	margin: 0 auto;
+	width: 65%;
+	padding-top:30px;
+}
+
+.devs .social-links ul{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.devs .social-links ul li i.fa{
+	font-size: 24px;
+	width: 45px;
+	height: 45px;
+	background: #111;
+	padding: 10px;
+	border-radius: 50%;
+	transition: 0.4s;
+}
+.devs .social-links ul li i.fa:hover{
+	background: #000;
+}
+
+.frame-dev{
+	width: 240px;
+	height: 240px;
+	display: block;
+	margin: 0 auto;
+	border-radius: 50%;
+	overflow: hidden
+}
+
+#page-content, .products{
+	background: #111;
+}
+
+@media (max-width: 768px){
+	.search-bar, ul.navbar-nav.right-side{
+		display: none;
+	}
+	.navbar-nav.mr-auto{
+		text-align: center
+	}
 }

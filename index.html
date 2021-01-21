@@ -9,8 +9,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/global.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
 </head>
 <body>
 
@@ -20,19 +18,19 @@
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="index.html">LOGO</a>
-		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleFunction()">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
 		    <div class="collapse navbar-collapse" id="navbarCollapse">
 		      <ul class="navbar-nav mr-auto">
 		        <li class="nav-item active">
-		          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#">A empresa</a>
+		          <a class="nav-link" href="desenvolvedores.html">A empresa</a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#">Produtos</a>
+		          <a class="nav-link" href="produtos.html">Produtos</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="contato.html">Contato</a>
@@ -44,7 +42,7 @@
 		      </form>
 		      <ul class="navbar-nav right-side">
 		      	<li class="nav-item">
-		          <a class="nav-link" href="login.html"><i class="fa fa-user-o" aria-hidden="true"></i> &nbsp; Entrar</a>
+		          <a class="nav-link" href="cadastro.html"><i class="fa fa-user-o" aria-hidden="true"></i> &nbsp; Entrar</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="finalizar.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
@@ -272,13 +270,10 @@
 			<div class="row">
 				<div class="col-12">
 					<ul class="left-list">
-						<li><a href="#">Suporte</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Sobre</a></li>
-						<li><a href="#">Afiliados</a></li>
-						<li><a href="#">Carreiras</a></li>
-						<li><a href="#">Carreiras</a></li>
-						<li><a href="#">Envie seu jogo</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="desenvolvedores.html">A empresa</a></li>
+						<li><a href="cadastro.html">Cadastro</a></li>
+						<li><a href="contato.html">Contato</a></li>
 						<li><a href="desenvolvedores.html">Desenvolvedores</a></li>
 					</ul>
 				</div>
@@ -311,14 +306,16 @@
 						</ul>
 					</div>
 					<div class="col-lg-4 col-sm-12">
-						<p>Nuuvem Jogos Digitais S.A. – CNPJ 17.126.332/0001-10 <br>
-                        Av. das Américas 7899 Bloco 2 Sala 604 - Rio de Janeiro, RJ - 22793-081</p>
+						<p>Informações da Empresa – CNPJ 99.999.999/9999-99 <br>
+                        Av. Cel. Francisco H. dos Santos, 210 - Jardim das Américas, Curitiba - PR, 81531-970</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>			
 </footer>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+<script src="js/global.js"></script>
 </body>
 </html>
