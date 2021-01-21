@@ -367,13 +367,23 @@ li.nav-item a:hover:before{
 	min-height: 61vh;
 	margin-top: 56px;
 	padding: 25px 0;
+	background: #111
 }
-
+.header-content h1{
+	color: #eee;
+	padding-bottom: 20px;
+}
+form#formulario{
+	margin-bottom: 65px;
+}
 #formulario .row{
 	margin-bottom: 15px;
 }
-#formulario input{
+#formulario input, select{
 	padding-left: 33px;
+	background: #232323 !important;
+	border: 1px solid #232323 !important;
+	color: #eee !important;
 }
 #formulario i:nth-child(1){
 	position: absolute;
@@ -391,19 +401,24 @@ li.nav-item a:hover:before{
     transform: translate(35px, 0);
     top: 25%;
     margin: 0;
-    color: #707070
+    color: #eee
 }
 #formulario input:focus, #formulario select:focus {
 	border-color: #000 !important;
 	box-shadow: none;
 }
+
+#formulario i.fa{
+	color: #09c;
+}
+
 #formulario input:focus + label.titulo, #formulario input:not(:placeholder-shown) + label{
 	transition: 0.35s;
 	top: -30%;
     left: 0;
-    color: #000;
-    background: #fff;
-    font-size: 14px
+    color: #fff;
+    background: transparent;
+    font-size: 14px;
 }
 button#enviar{
 	background: #000;
@@ -439,8 +454,6 @@ button#enviar:hover{
 	left: 50%;
 }
 
-.header-content h1{
-	color: #222 ;
-	padding-bottom: 20px;
-
+#register-form{
+	padding: 0 0 50px 0;
 }

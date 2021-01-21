@@ -61,6 +61,70 @@
                     <h1>Cadastro</h1>
                 </div>
             </div>
+            <div class="row">
+            	<div class="col-lg-3"></div>
+            	<div class="col-lg-6">
+            		<div id="register-form">
+            			<form id="formulario" action="">
+							<div class="row">
+								<div class="col-12">
+									<i class="fa fa-user-o" aria-hidden="true"></i>	
+									<input id="titular" name="titular" type="text" class="form-control" placeholder=" "/>
+									<label class="titulo" name="titulo" for="titular">Nome e sobrenome</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-6">
+									<i class="fa fa-phone" aria-hidden="true"></i>
+									<input type="tel" name="phone" id="phone" class="form-control" placeholder=" "/>
+									<label for="phone" class="titulo">Telefone</label>
+								</div>
+								<div class="col-6">
+									<i class="fa fa-calendar" aria-hidden="true"></i>
+									<input type="tel" name="data_nasc" id="data_nasc" class="form-control" placeholder=" "/>
+									<label for="data_nasc" class="titulo">Nascimento</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<i class="fa fa-envelope-o" aria-hidden="true"></i>
+									<input type="email" name="email" id="email" class="form-control"  value="" placeholder=" ">
+									<label for="email" class="titulo">E-mail</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+									<input type="password" name="password" id="password" class="form-control"  value="" placeholder=" ">
+									<label for="password" class="titulo">Senha</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+									<input type="password" name="confirm-password" id="confirm-password" class="form-control"  value="" placeholder=" ">
+									<label for="confirm-password" class="titulo">Confirme sua senha</label>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<div class="botao">
+										<button type="button" class="btn" id="enviar" onclick="sendForm()">
+											Enviar
+										</button>
+									</div>
+								</div>
+							</div>
+						</form>
+            		</div>
+            	</div>
+            	<div class="col-lg-3"></div>
+            </div>
         </div>
     </div>
 </section>
