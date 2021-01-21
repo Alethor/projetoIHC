@@ -363,8 +363,8 @@ li.nav-item a:hover:before{
 
 /*Formulário*/
 
-.contact-section{
-	/*min-height: 67;*/
+.content-section{
+	min-height: 61vh;
 	margin-top: 56px;
 	padding: 25px 0;
 }
@@ -439,3 +439,8 @@ button#enviar:hover{
 	left: 50%;
 }
 
+.header-content h1{
+	color: #222 ;
+	padding-bottom: 20px;
+
+}
