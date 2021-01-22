@@ -626,3 +626,37 @@ button#enviar3:hover{
 		text-align: center
 	}
 }
+.carrinho{
+	padding: 10px;
+	margin: 10px;
+	border-radius : 10px;
+	background-color: #222;
+
+}
+.carrinho button{
+
+	background-color: #c33;
+	width: 100%; 
+	color : #FFFFFF;
+
+}
+
+#detalhes {
+
+	/*background-color: white;*/
+	height: 40vh;
+
+}
+
+#cart-produtos ul{
+	list-style-type: none;
+	 display: flex; 
+	 flex-wrap: wrap; 
+	 align-items: center; 
+	 justify-content: space-between;
+}
+
+#cart-produtos img{
+	width: 150px; 
+	height: 110px;
+}
