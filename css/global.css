@@ -168,6 +168,9 @@ ul.navbar-nav.right-side {
 	background: #09c;
 	color: #eee;
 }
+.game-list  .header-block button a{
+	color: white;
+}
 .game-list  .header-block button:hover{
 	color: #fff;
 }
