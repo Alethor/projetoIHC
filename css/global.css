@@ -629,7 +629,7 @@ button#enviar3:hover{
 .carrinho{
 	padding: 10px;
 	margin: 10px;
-	border-radius : 10px;
+	border-radius : 4px;
 	background-color: #222;
 
 }
@@ -638,13 +638,6 @@ button#enviar3:hover{
 	background-color: #c33;
 	width: 100%; 
 	color : #FFFFFF;
-
-}
-
-#detalhes {
-
-	/*background-color: white;*/
-	height: 40vh;
 
 }
 
