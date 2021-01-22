@@ -261,6 +261,13 @@ ul.navbar-nav.right-side {
 .filtros{
 	width: 90%;
 }
+
+@media (max-width: 900px){
+	.filtros select {
+	    margin-bottom: 15px;
+	}
+}
+
 .catalogo{
 	flex-wrap: wrap;
 }
