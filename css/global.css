@@ -196,6 +196,54 @@ ul.navbar-nav.right-side {
 	overflow: hidden;
 }
 
+.catalogo{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.catalogo .item-game2{
+	width: 240px;
+	padding: 10px;
+	margin: 20px 10px;
+	background: #000;
+	border-radius: 4px;
+}
+
+.catalogo .item-game2 h5{
+	color: #eee;
+	height: 50px;
+	padding: 5px;
+}
+
+.catalogo .item-game2 span{
+	color: #aaa;
+    height: 110px;
+    display: block;
+}
+
+.catalogo .item-game2 img{
+	width: 100%;
+}
+
+.catalogo .item-game2 button{
+	width:90%;
+	display: block;
+	margin: 0 auto;
+	background-color: #c33;
+	position: relative;
+	transition: 0.3s;
+}
+.catalogo .item-game2 button a{
+	color: white;
+}
+
+.catalogo .item-game2 button:hover{
+	background-color: #c44;
+	opacity: 0.9;
+	width: 98%;
+}
+
 .game-list  .content-block h4{
 	color: #eee;
     font-size: 18px;
@@ -680,7 +728,7 @@ button#enviar3:hover{
 	height: 110px;
 }
 
-i.fa.fa-shopping-cart:after {
+.nav-item i.fa.fa-shopping-cart:after {
     content: '2';
     width: 13px;
     height: 13px;
