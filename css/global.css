@@ -177,8 +177,11 @@ ul.navbar-nav.right-side {
 }
 
 .game-list  .content-block .item-game{
-	width: 20%;
-	padding:10px;
+	width: 215px;
+	padding: 10px;
+	margin: 5px;
+	border-radius:4px;
+	background: #000
 }
 
 @media (max-width: 768px){
