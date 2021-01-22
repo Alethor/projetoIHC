@@ -210,6 +210,12 @@ ul.navbar-nav.right-side {
 	border-radius: 4px;
 }
 
+@media (max-width:600px){
+	.catalogo .item-game2{
+		width: 100%;
+	}
+}
+
 .catalogo .item-game2 h5{
 	color: #eee;
 	height: 50px;
