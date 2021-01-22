@@ -253,6 +253,22 @@ ul.navbar-nav.right-side {
 	text-transform: uppercase;
 }
 
+.filtros{
+	width: 90%;
+}
+.catalogo{
+	flex-wrap: wrap;
+}
+.catalogo .item-game{
+	margin-bottom: 20px;
+}
+
+.catalogo .item-game h5{
+	color: #ccc;
+	padding: 4px 0;
+}
+
+
 #footer{
 	background-color: #000;
 }
@@ -448,6 +464,15 @@ button#enviar{
 	transform-style: preserve-3d;
 	transition: all 300ms linear;
 }
+button#LimparFiltro{
+	background-color: #f22;
+	color: #ffff;
+}
+button#LimparFiltro:hover{
+	opacity: 0.9;
+	background-color: firebrick;
+}
+
 button#enviar:after{
 	position: absolute;
 	left: 0;

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Projeto IHC - Catálago</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+</head>
+<body>
+<div id="catalago">
+<!-- //HEADER -->
+<header>
+  <!-- Fixed navbar -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">LOGO</a>
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleFunction()">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarCollapse">
+		      <ul class="navbar-nav mr-auto">
+		        <li class="nav-item active">
+		          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="desenvolvedores.html">A empresa</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="produtos.html">Produtos</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="contato.html">Contato</a>
+		        </li>
+		      </ul>
+		      <form class="form-inline mt-2 mt-md-0 search-bar">
+		        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+		        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		      </form>
+		      <ul class="navbar-nav right-side">
+		      	<li class="nav-item">
+		          <a class="nav-link" href="cadastro.html"><i class="fa fa-user-o" aria-hidden="true"></i> &nbsp; Entrar</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="finalizar.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+		        </li>
+		      </ul>
+		    </div>
+	    </div>
+	</nav>
+</header>
+
+<section id="page-content">
+	<div class="content-section">
+		<div class="container">
+			<div class="header-content">
+                <div>
+                    <h1>Catálago</h1>
+                </div>
+            </div>
+            <label>Filtros: </label>
+            <div class="row">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="filtros">
+                        <select class="form-control"  name="Genero" id="generos">
+                            <option value="">Gênero</option>
+                            <option value="Adventure">Ação/Aventura</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Estrategia">Estratégia</option>
+                            <option value="Corrida">Corrida</option>
+                            <option value="MultiplayerOnline">Multiplayer Online</option>
+                        </select>
+                    </div>
+                 </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="filtros">
+                        <select class="form-control" name="Plataforma" id="plataforma">
+                            <option value="">Plataforma</option>
+                            <option value="Adventure">Steam</option>
+                            <option value="Horror">Nintendo Switch</option>
+                            <option value="Estrategia">Playstation</option>
+                            <option value="Corrida">Xbox</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="filtros">
+                        <select class="form-control" name="Preco" id="preco">
+                            <option value="">Preço</option>
+                            <option value="Adventure">Abaixo de R$10,00</option>
+                            <option value="Horror">Abaixo de R$30,00</option>
+                            <option value="Corrida">Abaixo de R$50,00</option>
+                            <option value="Corrida">Abaixo de R$100,00</option>
+                            <option value="Corrida">Em oferta</option>
+                        </select>
+                    </div>
+				</div> 
+				<div class="col-lg-3 col-sm-12">
+                    	<button class="btn btn-default" id="LimparFiltro">Limpar Filtros</a></button>
+				</div>
+			</div>
+				<div class="game-list">
+					<div class="container">
+						  <div class="catalogo content-block">
+							<div v-for="item of 10" class="item-game">
+								<img src="img/game-1.jpg" alt="">
+								<h5>Paper Mario And The Origami King</h5>
+								<span>O reino foi devastado por uma ameaça origami! Junte-se ao Mario e à sua nova companheira, Olivia.</span>
+								<button class="btn btn-default"><a href="#">R$ 299,00</a></button>
+								
+								<!--<img src="img/game-2.jpg" alt="">
+								<h5>Pokemon Lets'Go Pikachu</h5>
+								<span>Atravessa a região de Kanto numa emocionante aventura em Pokémon: Let's Go, Pikachu! e Pokémon: Let's Go, Eevee! para a Nintendo Switch.</span>
+								<button class="btn btn-default"><a href="#">R$ 299,00</a></button>
+								
+								<img src="img/game-3.jpg" alt="">
+							  	<h5>Skyrim</h5>
+							  	<span>Skyrim é um jogo de RPG que mantém a tradicional jogabilidade de mundo aberto encontrada na série The Elder Scrolls.</span>
+							  	<button class="btn btn-default"><a href="#">R$ 299,00</a></button>-->
+							</div>
+						</div>
+					</div>
+				</div>
+        </div>
+    </div>
+
+    
+</section>
+
+
+
+<!-- //FOOTER -->
+<footer>
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<ul class="left-list">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="desenvolvedores.html">A empresa</a></li>
+						<li><a href="cadastro.html">Cadastro</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						<li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="line-div"></div>
+			<h5>Acompanhe-nos</h5>
+			<div class="row">
+				<div class="col-12">
+					<ul id="social-media">
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+						<li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube</a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+						<li><a href="#"><i class="fa fa-twitch" aria-hidden="true"></i>Twitch</a></li>
+						<li><a href="#"><i class="fa fa-commenting-o" aria-hidden="true"></i>Discord</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="line-div"></div>
+			<div class="last">
+				<div class="row">
+					<div class="col-lg-3 col-sm-12">
+						<img src="" alt="LOGO">
+					</div>
+					<div class="col-lg-5 col-sm-12">
+						<ul>
+							<li><a href="#">Termos de Uso</a></li>
+							<li><a href="#">PolÃ­tica de Privacidade</a></li>
+							<li><a href="#">Procon-PR</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-12">
+						<p>Nuuvem Jogos Digitais S.A. â CNPJ 17.126.332/0001-10 <br>
+                        Av. das AmÃ©ricas 7899 Bloco 2 Sala 604 - Rio de Janeiro, RJ - 22793-081</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>			
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+<script src="js/global.js"></script>
+
+<script>
+    new Vue({
+    el: '#catalago',
+	data: {
+		chance: 1
+        }
+    })
+</script>
+</div>
+</body>
+</html>
