@@ -17,7 +17,7 @@
   <!-- Fixed navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">LOGO</a>
+			<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="100px"></a>
 		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleFunction()">
 		      <span class="navbar-toggler-icon"></span>
 		    </button>
@@ -61,49 +61,62 @@
                     <h1>Carrinho de compras</h1>
                 </div>
                 <div class="row">
-            	<div class="col-lg-8 carrinho" id="detalhes">
-            			<p>Detalhes</p>
-            			<hr>
-            			<div id="cart-produtos">
-            				<ul>
-            				<li><img src="img/game-1.jpg"></li>
-            				<li><p>Description</p></li>
-            				<li><p>quantidade</p></li>
-            				<li><p>preço R$: X,xx</p></li>
-            				</ul>
-            			</div>
-
+            	<div class="col-lg-8">
+            		<div id="detalhes" class="carrinho">
+	        			<div class="cart-title">
+	        				<h6>Detalhes</h6>
+	        				<h6>Valor</h6>
+	        			</div>
+	        			<hr>
+	        			<div id="cart-produtos">
+	        				<ul>
+	        				<li><img src="img/game-1.jpg"></li>
+	        				<li>Paper Mario™: The Origami King</li>
+	        				<li><strong>R$110,50</strong></li>
+	        				</ul>
+	        			</div>
+	        			<div id="cart-produtos">
+	        				<ul>
+	        				<li><img src="img/game-1.jpg"></li>
+	        				<li>Paper Mario™: The Origami King</li>
+	        				<li><strong>R$110,50</strong></li>
+	        				</ul>
+	        			</div>
+	        		</div>
             	</div>
             	<div class="col-lg-3 ">
             			<div id="pagamento" class="carrinho">
-            				<p>Formas de pagamento</p>
+            				<h6>Formas de pagamento</h6>
             				<hr>
             				<form>
             					<div>
-            					<input type="radio" name="pagamento">
-            					<label>Boleto</label>
+            					<input id="boleto" type="radio" name="pagamento">
+            					<label for="boleto">Boleto</label>
             					</div>
             					<hr>
             					<div>
-            						<input type="radio" name="pagamento">
-            						<label>Cartão de Crédito</label>
+            						<input id="credito" type="radio" name="pagamento">
+            						<label for="credito">Cartão de Crédito</label>
             					</div>
             					<hr>
             					<div>
-            						<input type="radio" name="pagamento">
-            						<label>Cartão de Débito</label>
+            						<input id="debito" type="radio" name="pagamento">
+            						<label for="debito">Cartão de Débito</label>
             					</div>
             					<hr>
      
-            					<input type="checkbox" name="termos">
-            					<label>Termos</label>
+            					<input id="termos" type="checkbox" name="termos">
+            					<label for="termos">Termos</label>
             				</form>
             				
             			</div>
             			<div class="carrinho">
-            				<label>Total : R$ X,xx</label>
+            				<div class="cart-title">
+            					<h6>Valor total</h6>
+	            				<label><strong>R$223,00</strong></label>
+            				</div>
             				<hr>
-            				<button class="btn btn-default">Finalizar</button>
+            				<button class="btn btn-default" id="buy-button"><a href="">Finalizar</a></button>
             			</div>
             	</div>
             	
@@ -147,7 +160,7 @@
 			<div class="last">
 				<div class="row">
 					<div class="col-lg-3 col-sm-12">
-						<img src="" alt="LOGO">
+						<img src="img/logo.png" alt="" width="100px">
 					</div>
 					<div class="col-lg-5 col-sm-12">
 						<ul>
