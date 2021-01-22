@@ -660,3 +660,57 @@ button#enviar3:hover{
 	width: 150px; 
 	height: 110px;
 }
+
+/*Página do produto*/
+
+.product h1{
+	color: #eee;
+	font-size: 28px;
+}
+
+.product .description{
+	background: #222;
+	border-radius: 4px;
+	padding: 20px;
+	color: #eee;
+}
+.product .description h2{
+	padding-bottom: 20px;
+}
+.product .description p{
+	margin-bottom: 1px !important;
+	padding-bottom: 0 !important;
+}
+
+ul.rating{
+	list-style-type: none;
+}
+ul.rating li{
+	float: left;
+	margin-right:4px;
+	color: yellow;
+}
+
+#buy-button{
+	background-color: firebrick;
+	width: 100%;
+	transition: 0.4s;
+}
+#buy-button a{
+	color: #fff;
+	text-transform: uppercase;
+}
+#buy-button i{
+	margin-right: 12px;
+	color: #fff;
+	font-size: 18px;
+}
+#buy-button:hover{
+	background-color: green;
+}
+.product .about-game{
+	color: #eee;
+}
+.product .about-game p {
+	text-align: justify;
+}
