@@ -1,7 +1,8 @@
+$(window).on('load',function(){
+	$('.preloader').addClass('complete');
+});
+
 $(document).ready(function(){
-	//Toggle bar on mobile
-
-
 	// Validações
 
     $('#phone').mask("(99) 9999-99999");
