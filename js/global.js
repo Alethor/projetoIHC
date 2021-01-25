@@ -47,3 +47,7 @@ function toggleFunction(){
 		x.style.display = "none";
 	}
 }
+
+$("#carrinhoProdutos").on("click", "#removerProduto", function() {
+   $(this).closest("tr").remove();
+});

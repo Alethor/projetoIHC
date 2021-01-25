@@ -750,12 +750,19 @@ button#enviar3:hover{
 	align-items: center;
 }
 
-#cart-produtos ul{
-	list-style-type: none;
-	display: flex; 
-	flex-wrap: wrap; 
-	align-items: center; 
-	justify-content: space-between;
+#detalhes table{
+	color: #fff;
+}
+
+#detalhes table i{
+	display: block;
+	color: #ff5555;
+	cursor: pointer;
+}
+
+#detalhes table td,#detalhes table tr {
+	text-align: center;
+	vertical-align: middle
 }
 
 #cart-produtos img{
