@@ -10,6 +10,12 @@ $(document).ready(function(){
 
 });
 
+function clearFilters(){
+	$('#generos').prop('selectedIndex',0);
+	$('#plataforma').prop('selectedIndex',0);
+	$('#preco').prop('selectedIndex',0);
+}
+
 function sendForm(){
 		var arrayinput = document.getElementsByTagName("input");
 		var cont = 0;
