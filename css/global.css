@@ -813,3 +813,46 @@ ul.rating li{
 .product .about-game p {
 	text-align: justify;
 }
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10000;
+	transition: 1s;
+}
+
+.preloader.complete{
+	opacity: 0.8;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.preloader:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	z-index: 10000;
+	background: #000;
+	transition: 1s;
+}
+.preloader.complete:before{
+	left: -50%
+}
+.preloader:after{
+	content: '';
+	position: absolute;
+	right: 0;
+	width: 50%;
+	height: 100%;
+	background: #000;
+	z-index: 10000;
+	transition: 1s;
+}
+.preloader.complete:after{
+	right: -50%
+}
