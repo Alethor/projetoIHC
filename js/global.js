@@ -10,7 +10,6 @@ $(document).ready(function(){
 	$('#cep').mask("99999-999")
 
 });
-<<<<<<< Updated upstream
 
 function clearFilters(){
 	$('#generos').prop('selectedIndex',0);
@@ -18,12 +17,10 @@ function clearFilters(){
 	$('#preco').prop('selectedIndex',0);
 }
 
-=======
 function showKey(id){
 	$('#'+id).text("ADIHQ-6FXI6-3P77C");
 	
 }
->>>>>>> Stashed changes
 function sendForm(){
 		var arrayinput = document.getElementsByTagName("input");
 		var cont = 0;
