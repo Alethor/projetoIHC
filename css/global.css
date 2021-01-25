@@ -30,6 +30,14 @@ a:hover{
     position: relative;
 }
 
+.item-game2 p{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
 #banner-home .content{
 	position: absolute;
 	transform: translate(-50px, -50px);
@@ -540,9 +548,16 @@ button#LimparFiltro{
 	background-color: #f22;
 	color: #ffff;
 }
+
+
+
 button#LimparFiltro:hover{
 	opacity: 0.9;
 	background-color: firebrick;
+}
+
+.item-game2 button{
+	color: #ffff;
 }
 
 button#enviar:after{

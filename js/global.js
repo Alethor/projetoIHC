@@ -6,9 +6,11 @@ $(document).ready(function(){
 	// Validações
 
     $('#phone').mask("(99) 9999-99999");
-    $('#data_nasc').mask("99/99/9999");
+	$('#data_nasc').mask("99/99/9999");
+	$('#cep').mask("99999-999")
 
 });
+<<<<<<< Updated upstream
 
 function clearFilters(){
 	$('#generos').prop('selectedIndex',0);
@@ -16,6 +18,12 @@ function clearFilters(){
 	$('#preco').prop('selectedIndex',0);
 }
 
+=======
+function showKey(id){
+	$('#'+id).text("ADIHQ-6FXI6-3P77C");
+	
+}
+>>>>>>> Stashed changes
 function sendForm(){
 		var arrayinput = document.getElementsByTagName("input");
 		var cont = 0;

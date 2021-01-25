@@ -16,40 +16,41 @@
 <header>
   <!-- Fixed navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-		<div class="container">
-			<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="100px"></a>
-		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleFunction()">
-		      <span class="navbar-toggler-icon"></span>
-		    </button>
-		    <div class="collapse navbar-collapse" id="navbarCollapse">
-		      <ul class="navbar-nav mr-auto">
-		        <li class="nav-item active">
-		          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="desenvolvedores.html">A empresa</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="catalogo.html">Produtos</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="contato.html">Contato</a>
-		        </li>
-		      </ul>
-		      <form class="form-inline mt-2 mt-md-0 search-bar">
-		        <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
-		        <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-		      </form>
-		      <ul class="navbar-nav right-side">
-		      	<li class="nav-item">
-		          <a class="nav-link" href="login.html"><i class="fa fa-user-o" aria-hidden="true"></i> &nbsp; Entrar</a>
-		        </li>
-		        <li class="nav-item">
-		          <a class="nav-link" href="finalizar.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-		        </li>
-		      </ul>
-		    </div>
-	    </div>
+		<a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="" width="100px"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleFunction()">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+		  <ul class="navbar-nav mr-auto">
+		    <li class="nav-item active">
+		      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="desenvolvedores.html">A empresa</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="catalogo.html">Produtos</a>
+		    </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="contato.html">Contato</a>
+		    </li>
+		  </ul>
+		  <form class="form-inline mt-2 mt-md-0 search-bar" action="catalogo.html">
+		    <input class="form-control mr-sm-2" type="text" placeholder="Buscar" aria-label="Search">
+		    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+		  </form>
+		  <ul class="navbar-nav right-side">
+		  	<li class="nav-item">
+		      <a class="nav-link" href="login.html"><i class="fa fa-user-o" aria-hidden="true"></i> &nbsp; Entrar</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="meusjogos.html"><i class="fa fa-gamepad" aria-hidden="true"></i> &nbsp; Meus Jogos</a>
+			  </li>
+		    <li class="nav-item">
+		      <a class="nav-link" href="finalizar.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+		    </li>
+		  </ul>
+		</div>
 	</nav>
 </header>
 
@@ -99,6 +100,16 @@
 
 <!-- //CONTEUDO -->
 <section id="page-content">
+	<div class="banner-content">
+		<div class="container">
+			<div class="info">
+				<span>Lançamento! Paper Mario™: The Origami King</span>
+				<img src="img/mario.png"></img>
+				<button class="btn btn-default"><a href="produto.html">Conferir</a></button>
+			</div>
+		</div>
+	</div>
+
  	<div class="game-list">
 		<div class="container">
 			<div class="header-block">
@@ -111,27 +122,27 @@
 			<div class="content-block">
 				<div class="item-game">
 					<img src="img/game-1.jpg" alt="">
+					<h4>Paper Mario™: The Origami King</h4>
+					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
+				</div>
+				<div class="item-game">
+					<img src="img/fire.jpg" alt="">
 					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
 					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
 				</div>
 				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
+					<img src="img/ocean.jpg" alt="">
+					<h4>Oceanhorn: Monster of Uncharted Seas</h4>
 					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
 				</div>
 				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
+					<img src="img/zelda.jpg" alt="">
+					<h4>The Legend of Zelda™: Breath of the Wild</h4>
 					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
 				</div>
 				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
+					<img src="img/zeldaR.jpg" alt="">
+					<h4>The Legend of Zelda™: Link’s Awakening</h4>
 					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
 				</div>
 			</div>
@@ -153,113 +164,31 @@
 					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
 				</div>
 				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
+					<img src="img/eevee.jpg" alt="">
+					<h4>Pokémon™: Let’s Go, Eevee!</h4>
 					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
 				</div>
 				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
+					<img src="img/sword.jpg" alt="">
+					<h4>Pokémon™ Sword And Shield</h4>
 					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
 				</div>
 				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
+					<img src="img/shield.jpg" alt="">
+					<h4>Pokémon™ Sword And Shield</h4>
 					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
 				</div>
 				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
+					<img src="img/expansão.jpg" alt="">
+					<h4>Pokémon™ Sword Expansion Pass</h4>
 					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
 				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div class="banner-content">
-		<div class="container">
-			<div class="info">
-				<span>Lançamento! Uma mensagem maneira de lançamento</span>
-				<button class="btn btn-default"><a href="produto.html">Conferir</a></button>
-			</div>
-		</div>
-	</div>
+	
 
-	<div class="game-list">
-		<div class="container">
-			<div class="header-block">
-				<div>
-					<h3>Nintendo</h3>
-					<small>Garanta agora lançamentos e clássicos da gigante dos games!</small>
-				</div>
-				<button class="btn btn-default"><a href="produtos.html">Ver mais</a></button>
-			</div>
-			<div class="content-block">
-				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-1.jpg" alt="">
-					<h4>Fire Emblem™: Shadow Dragon & the Blade of Light</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 31,00</a></button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="game-list">
-		<div class="container">
-			<div class="header-block">
-				<div>
-					<h3>Pokémon</h3>
-					<small>Venha pegar todos!</small>
-				</div>
-				<button class="btn btn-default"><a href="produtos.html">Ver mais</a></button>
-			</div>
-			<div class="content-block">
-				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
-				</div>
-				<div class="item-game">
-					<img src="img/game-2.jpg" alt="">
-					<h4>Pokémon™: Let’s Go, Pikachu!</h4>
-					<button class="btn btn-default"><a href="produto.html">R$ 52,50</a></button>
-				</div>
-			</div>
-		</div>
 	</div>
 </section>
 
