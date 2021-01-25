@@ -108,6 +108,16 @@
 
 						<div class="row">
 							<div class="col-12">
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+								<textarea name="descricao" id="descricao" class="form-control" value="" placeholder=""> </textarea>
+								<label for="email" class="titulo">Mensagem</label>
+							</div>
+						</div>
+						
+
+
+						<div class="row">
+							<div class="col-12">
 								<div class="botao">
 									<button type="button" class="btn" id="enviar" onclick="sendForm()">
 										Enviar
@@ -116,6 +126,13 @@
 							</div>
 						</div>
 					</form>
+					
+					<div class="alert alert-success" id="success-alert" role="alert">
+  							Logado com Sucesso.
+						</div>
+						<div class="alert alert-danger" id="danger-alert" role="alert">
+							  Preencha todos os campos para cadastrar.
+						</div>
 				</div>
 				<div class="col-sm-12 col-lg-6">
 					<img src="img/contact-us.jpg" class="img-fluid">
