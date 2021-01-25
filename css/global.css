@@ -890,7 +890,7 @@ ul.rating li{
 .alert{
 	display: none;
 }
-.rating{
+.rating-game{
 	margin-bottom: 10px;
 	display: flex;
 	width: 120px;
@@ -898,15 +898,15 @@ ul.rating li{
     position: relative;
     transform:rotateY(180deg);
 }
-.rating input{
+.rating-game input{
 	display: none;
 }
-.rating label{
+.rating-game label{
 	display: block;
 	cursor: pointer;
 	width: 30px;
 }
-.rating label:before{
+.rating-game label:before{
 	content:'\f005';
 	font-family: fontAwesome;
 	position: relative;
@@ -914,7 +914,7 @@ ul.rating li{
 	font-size: 22px;
 	color: #aaa;
 }
-.rating label:after{
+.rating-game label:after{
 	content:'\f005';
 	font-family: fontAwesome;
 	position: absolute;
@@ -925,9 +925,9 @@ ul.rating li{
 	opacity: 0;
 	transition: .3s;
 }
-.rating label:hover:after,
-.rating input:hover ~ label:after,
-.rating input:checked ~ label:after {
+.rating-game label:hover:after,
+.rating-game input:hover ~ label:after,
+.rating-game input:checked ~ label:after {
 	opacity: 1;
 	z-index: 20;
 }
