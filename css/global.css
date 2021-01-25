@@ -502,7 +502,7 @@ form#formulario{
 #formulario .row{
 	margin-bottom: 15px;
 }
-#formulario input, select{
+#formulario input, select, textarea{
 	padding-left: 33px;
 	background: #232323 !important;
 	border: 1px solid #232323 !important;
