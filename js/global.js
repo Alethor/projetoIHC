@@ -8,8 +8,9 @@ $(document).ready(function(){
     $('#phone').mask("(99) 9999-99999");
     $('#data_nasc').mask("99/99/9999");
 
+});
 
-	function sendForm(){
+function sendForm(){
 		var arrayinput = document.getElementsByTagName("input");
 		var cont = 0;
 		for (var i = 1 ; i<arrayinput.length ; i++) {
@@ -19,12 +20,13 @@ $(document).ready(function(){
 		}
 
 		if (cont) {
-				alert("Preencha todos os campos !");
+				//alert("Preencha todos os campos !");
+				$("#danger-alert").show();
 		}else{
-				alert("Enviado com sucesso !");
+				$("#danger-alert").hide();
+				$("#success-alert").show();
 		}
 	}
-});
 
 function toggleFunction(){
 	var x = document.getElementById("navbarCollapse");

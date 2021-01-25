@@ -856,3 +856,13 @@ ul.rating li{
 .preloader.complete:after{
 	right: -50%
 }
+
+#inicial{
+	background-color: #c33;
+
+}
+
+.alert{
+	display: none;
+
+}
